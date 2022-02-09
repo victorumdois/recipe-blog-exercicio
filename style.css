@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    /*border: solid 1px red;*/
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+li{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    counter-reset: contadorInstructions;
+    margin: 50px 16vw 0px 16vw;
+}
+
+.header-titulo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+}
+.header-blockquote{
+    display: flex;
+    align-items: baseline;
+
+}
+.header-paragrafo{
+    max-width: 592px;
+    margin-left: 12px;
+    margin-bottom: 26px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.header-imagem{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+aside{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-top: 48px;
+    padding: 52px 52px 12px 52px;
+}
+.aside-div-item{
+    display: grid;
+    grid-template-areas: "icone texto" "icone texto" "icone texto" "icone texto";
+    grid-template-columns: 32px 110px;
+    margin-bottom: 42px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: ;*/
+    
+}
+.material-icons-outlined{
+    color: #4F4F4F;
+    width: 38px;
+    height: 38px;
+    grid-area: icone;
+    margin-top: 5px;
+    
+}
+.aside-item{
+    font-weight: 700;
+    font-size: 10px;
+    color: #BDBDBD;
+    margin-bottom: 4px;
+}
+.aside-item-info{
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    grid-area: texto;
+    
+}
+
+
+article{
+    margin-right: 15vw;
+    color: #333333;   
+}
+.article-titulo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin: 28px 0px;
+}
+.article-subtitulo{
+    margin: 32px 0px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    color: #333333;
+}
+input.article-checkbox{
+    border: 1px solid #828282;
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    
+    display: inline-block;
+
+}
+.article-ingredients-list{
+    list-style-type: none;
+    list-style: none;
+}
+.article-ingredients-itens{
+    /*margin: 13px 10px;*/
+    margin-left: 17px;
+    margin-bottom: 14px;
+
+}
+.article-section-item{
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+}
+.article-instructions-list{
+    list-style-type: none;
+
+}
+article strong{
+    
+}
+.article-instructions-itens{
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 32px;
+    width: 550px;
+    line-height: 24px;
+}
+.article-instructions-itens::before{
+    counter-increment: contadorInstructions;
+    content: counter(contadorInstructions) '';
+    background-color: #F2994A;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    border-radius: 6px;
+    margin-right: 15px;
+    padding: 2px 13px 6px 13px;
+}
+
+.article-src-ref{
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #BDBDBD;
+    margin-top: 34px;    
+}
+
+
+footer{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 23px;
+}
+#footer-username{
+    text-decoration: underline;
+    font-weight: 700;
+    color: #828282;
+}
+#footer-site{
+    color: #828282;
+}
+
+
+
+
+
+
+
+
+
